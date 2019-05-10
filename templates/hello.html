@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reusable Form Demo</title>
+<style>
+body {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.container {
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.darker {
+  border-color: #ccc;
+  background-color: #ddd;
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+
+.time-right {
+  float: right;
+  color: #aaa;
+}
+
+.time-left {
+  float: left;
+  color: #999;
+}
+
+.bot-img{
+  margin-bottom: 20px;
+}
+
+</style>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body class="container">
+
+
+<form action="" method="post">
+  {{ context.form.csrf }}
+	<div class="input text form-group" style="float: left;">
+        <input id="name" name="name" required="" type="text" size="70" class="form-control input-lg">
+    </div>
+	<div class="input submit">
+        <input type="submit" value="Submit" class="btn btn-primary" >
+	</div>
+	
+</form>
+<br>
+
+{% with messages = get_flashed_messages(with_categories=true) %}
+  {% if messages %}
+
+    <ul>
+
+      {% for message in messages %}
+
+        {% if 'User' in message[1] %}
+          <br>
+        {% endif %}
+
+        {% if '.png' in message[1] %}
+          <p>Bot : </p>
+          <img class="bot-img" src={{message[1][7:]}} alt="nothing" style="height:70%; width:60%">
+        {% else %} 
+            <li>{{ message[1] }}</li>
+        {% endif %}
+      {% endfor %}
+
+
+      {% for each_mes in context.total_response[2:] %}
+        {% if 'User' in each_mes %}
+          <br>
+        {% endif %}
+        {% if ".png" in each_mes %}
+          <p>Bot : </p>
+          <img class="bot-img" src={{each_mes[7:]}} alt="nothing" style="height:70%; width:60%">
+        {% else %} 
+          <li>{{ each_mes }}</li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
+
+
+</body>
+
+</html>

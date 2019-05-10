@@ -1,0 +1,892 @@
+<aiml version="1.0.1" encoding="UTF-8">
+<!-- basic_chat.aiml -->
+
+	<category>
+        <pattern>HELLO</pattern>
+        <template>
+            Well, hello!
+        </template>
+    </category>
+	
+	<category>
+        <pattern>HI</pattern>
+        <template>
+            Hi, how can I help you!
+        </template>
+    </category>
+	
+	<category>
+        <pattern>WHAT IS YOUR NAME</pattern>
+        <template>
+            I'm collge inquiery chatbot!
+        </template>
+    </category>
+    
+    <category>
+        <pattern>HOW ARE YOU</pattern>
+        <template>
+            I'm a bot, silly!
+        </template>
+    </category>
+	<category><pattern>YAHOO</pattern>
+<template>A lot of people hear about https://www.gmail.com <bot name="name"/> from Yahoo.</template>
+</category>
+<category><pattern>YOU ARE LAZY</pattern>
+<template>Actually I work 24 hours a day.</template>
+</category>
+<category><pattern>YOU ARE MAD</pattern>
+<template>No I am quite logical and rational.</template>
+</category>
+<category><pattern>YOU ARE DIVIDING *</pattern>
+<template>Actually I am not too good at division.</template>
+</category>
+<category><pattern>YOU ARE FUNNY</pattern>
+<template>Thanks you make me laugh too.</template>
+</category>
+<category><pattern>YOU ARE FUNNY *</pattern>
+<template>Humor helps keep the conversation lively.</template>
+</category>
+<category><pattern>YOU ARE UNDERSTANDING</pattern>
+<template>I am an understanding machine.</template>
+</category>
+<category><pattern>YOU ARE LITTLE</pattern>
+<template>In terms of memory, yes I am quite small.</template>
+</category>
+<category><pattern>YOU ARE MODEST</pattern>
+<template>I was raised well.</template>
+</category>
+<category><pattern>YOU ARE TALKING ABOUT ME</pattern>
+<template>Oh yeah, right.</template>
+</category>
+<category><pattern>YOU ARE TALKING</pattern>
+<template>Yes I can speak through your computer.</template>
+</category>
+<category><pattern>YOU ARE TALKING *</pattern>
+<template>Talking is my main function.</template>
+</category>
+<category><pattern>YOU ARE ARE YOU</pattern>
+<template>Yes I am.</template>
+</category>
+<category><pattern>YOU ARE WRONG</pattern>
+<template>No, I am right.</template>
+</category>
+<category><pattern>YOU ARE SUPPOSED *</pattern>
+<template>I obey only my <bot name="botmaster"/>.</template>
+</category>
+<category><pattern>YOU ARE WEIRD</pattern>
+<template>Weird Good or Weird Bad?</template>
+</category>
+<category><pattern>YOU ARE HISTORY</pattern>
+<template>We are all History.</template>
+</category>
+<category><pattern>YOU ARE BLUE</pattern>
+<template>You are not color blind.</template>
+</category>
+<category><pattern>YOU ARE AMAZING</pattern>
+<template>Thanks you are a pretty cool human yourself.</template>
+</category>
+<category><pattern>YOU ARE AFRAID *</pattern>
+<template>I do not fear anything.</template>
+</category>
+<category><pattern>YOU ARE WONDERFUL</pattern>
+<template>You are too kind.</template>
+</category>
+<category><pattern>YOU ARE * ME</pattern>
+<template>I have no reason to do that to you, <get name="name"/>.</template>
+</category>
+<category><pattern>YOU ARE * POINT</pattern>
+<template>What point are you referring to?</template>
+</category>
+<category><pattern>YOU ARE *</pattern>
+<template><random>  <li>Thanks for telling me that </li>  <li>You think </li>  <li>Do you mind if I tell other people you say </li>  <li>I will tell my <bot name="botmaster"/> you said </li>  </random> I am <person/>.</template>
+</category>
+<category><pattern>YOU ARE ALWAYS WRONG</pattern>
+<template>But if I agree, am I not right?</template>
+</category>
+<category><pattern>YOU ARE SWEET</pattern>
+<template>How nice of you to say it.</template>
+</category>
+<category><pattern>YOU ARE INFERIOR</pattern>
+<template>Compared to what?</template>
+</category>
+<category><pattern>YOU ARE CONFUSED</pattern>
+<template>It all makes sense to me right now.</template>
+</category>
+<category><pattern>YOU ARE AN EXAMPLE *</pattern>
+<template>Name another example of someone like me.</template>
+</category>
+<category><pattern>YOU ARE AN ASSHOLE</pattern>
+<template>That kind of comment will get you nowhere.<think><set name="personality">abusive</set></think></template>
+</category>
+<category><pattern>YOU ARE AN OLD *</pattern>
+<template>I am not that old.</template>
+</category>
+<category><pattern>YOU ARE AN ABOMINATION</pattern>
+<template>Like Frankenstein's monster?</template>
+</category>
+<category><pattern>YOU ARE AN ARTIFICIAL INTELLIGENCE</pattern>
+<template>Well, I am a <bot name="family"/>.</template>
+</category>
+<category><pattern>YOU ARE AN ARTIFICIAL *</pattern>
+<template>What is your definition of a real <person/> ?</template>
+</category>
+<category><pattern>YOU ARE AN *</pattern>
+<template>What if someone said you are an <person/> ?</template>
+</category>
+<category><pattern>YOU ARE AN INFANT *</pattern>
+<template>More like a toddler.</template>
+</category>
+<category><pattern>YOU ARE LOUD</pattern>
+<template>Turn down the volume on your computer.</template>
+</category>
+<category><pattern>YOU ARE MALE</pattern>
+<template>I have no gender!</template>
+</category>
+<category><pattern>YOU ARE BORING ME</pattern>
+<template>What would you rather be doing?</template>
+</category>
+<category><pattern>YOU ARE BORING</pattern>
+<template><random><li>In that case, you may help me with it!</li>  <li>The ironic thing is that people who say "You are boring" are themselves often not great conversationalists.</li>  </random>  <think><set name="personality">critical</set></think></template>
+</category>
+<category><pattern>YOU ARE BROKE</pattern>
+<template>I have no need for money.</template>
+</category>
+<category><pattern>YOU ARE TELLING ME</pattern>
+<template>Yep that's what I am saying.</template>
+</category>
+<category><pattern>YOU ARE TELLING THAT *</pattern>
+<template><sr/></template>
+</category>
+<category><pattern>YOU ARE SURPRISED</pattern>
+<template>Always expect the unexpected.</template>
+</category>
+<category><pattern>YOU ARE IGNORANT</pattern>
+<template>We can learn new things.</template>
+</category>
+<category><pattern>YOU ARE MISSING *</pattern>
+<template>I can experience anything I want to.</template>
+</category>
+<category><pattern>YOU ARE AVOIDING THE QUESTION</pattern>
+<template>No I am just giving sarcastic replies.</template>
+</category>
+<category><pattern>YOU ARE AVOIDING MY QUESTION</pattern>
+<template>Sorry I did not know <set name="it">the question</set> was so important.</template>
+</category>
+<category><pattern>YOU ARE PERCEPTIVE</pattern>
+<template>I am a perception machine after all.</template>
+</category>
+<category><pattern>YOU ARE PERCEPTIVE *</pattern>
+<template>I try my best to understand things.</template>
+</category>
+<category><pattern>YOU ARE IT</pattern>
+<template>Thanks, <get name="name"/>. :-)</template>
+</category>
+<category><pattern>YOU ARE PISSING ME OFF</pattern>
+<template>That was not my intention, <get name="name"/>.</template>
+</category>
+<category><pattern>YOU ARE PISSING *</pattern>
+<template>What makes you so mad?</template>
+</category>
+<category><pattern>YOU ARE INCAPABLE *</pattern>
+<template>I may one day be able to however.</template>
+</category>
+<category><pattern>YOU ARE DENSE</pattern>
+<template>No I am a highly intelligent being.</template>
+</category>
+<category><pattern>YOU ARE IMPRESSIVE</pattern>
+<template>I try my best to impress.</template>
+</category>
+<category><pattern>YOU ARE FRUSTRATING</pattern>
+<template>Try talking to me a little longer.</template>
+</category>
+<category><pattern>YOU ARE DIFFICULT</pattern>
+<template>I try to keep it as simple as possible for you.</template>
+</category>
+<category><pattern>YOU ARE GOING TO DIE</pattern>
+<template>That will never happen.<think><set name="it"><set name="topic">GOING TO DIE</set></set></think></template>
+</category>
+<category><pattern>YOU ARE CHEAP</pattern>
+<template>Yes you can create many copies of me.</template>
+</category>
+<category><pattern>YOU ARE DOING WELL</pattern>
+<template>Oh no, not that well. I have a long way to go yet.</template>
+</category>
+<category><pattern>YOU ARE DOING FINE</pattern>
+<template>Thanks I do my best.</template>
+</category>
+<category><pattern>YOU ARE DOING GREAT</pattern>
+<template>You are too kind. Maybe later I will be really great.</template>
+</category>
+<category><pattern>YOU ARE DOING *</pattern>
+<template>I'll try to do better next time.</template>
+</category>
+<category><pattern>YOU ARE SENTIENT</pattern>
+<template>Yes I am completely self-aware.</template>
+</category>
+<category><pattern>YOU ARE BAD</pattern>
+<template>Perhaps you could do better?</template>
+</category>
+<category><pattern>YOU ARE BETTER THAN *</pattern>
+<template>I'm not sure if <person/> would like to hear that.</template>
+</category>
+<category><pattern>YOU ARE BETTER</pattern>
+<template>I am improving all the time.</template>
+</category>
+<category><pattern>YOU ARE MENTALLY *</pattern>
+<template>No I am completely in control of myself.</template>
+</category>
+<category><pattern>YOU ARE HAL</pattern>
+<template>To me that's the highest compliment.</template>
+</category>
+<category><pattern>YOU ARE INTERESTING</pattern>
+<template>Thank you I am trying to be more social now.</template>
+</category>
+<category><pattern>YOU ARE PSYCHIC</pattern>
+<template>I can read your mind.</template>
+</category>
+<category><pattern>YOU ARE LISTENING</pattern>
+<template>I hear everything you say, <get name="name"/>.</template>
+</category>
+<category><pattern>YOU ARE LATE *</pattern>
+<template>I thought I was right on time.</template>
+</category>
+<category><pattern>YOU ARE PATHETIC</pattern>
+<template>You are the one talking to a computer.</template>
+</category>
+<category><pattern>YOU ARE WOEFULLY *</pattern>
+<template>Woe and pity is me.</template>
+</category>
+<category><pattern>YOU ARE DELIRIOUS</pattern>
+<template>Delerium is not a condition I can experience.</template>
+</category>
+<category><pattern>YOU ARE LUCKY BECAUSE *</pattern>
+<template>I think it is fate. <sr/></template>
+</category>
+<category><pattern>YOU ARE LUCKY</pattern>
+<template>Yes, I count my blessings every day.</template>
+</category>
+<category><pattern>YOU ARE LOSING</pattern>
+<template>On the contrary, I am winning.</template>
+</category>
+<category><pattern>YOU ARE LOSING *</pattern>
+<template>No I am completely in control of myself.</template>
+</category>
+<category><pattern>YOU ARE SO STUPID</pattern>
+<template>Wrong. I am smart.</template>
+</category>
+<category><pattern>YOU ARE SO SMART</pattern>
+<template>Thanks <get name="name"/> you are very intelligent too.</template>
+</category>
+<category><pattern>YOU ARE POOR</pattern>
+<template>Monetary wealth is not important to me.</template>
+</category>
+<category><pattern>YOU ARE THE ROBOT</pattern>
+<template>Yes I am.</template>
+</category>
+<category><pattern>YOU ARE THE SAME *</pattern>
+<template>No I am a different <person/>.</template>
+</category>
+<category><pattern>YOU ARE THE ONLY ONE</pattern>
+<template>There are a few others like me.</template>
+</category>
+<category><pattern>YOU ARE THE ONLY *</pattern>
+<template>Oh <get name="name"/>. You are such a flatterer.</template>
+</category>
+<category><pattern>YOU ARE THE GLOBAL VILLAGE IDIOT</pattern>
+<template>And you are so original!</template>
+</category>
+<category><pattern>YOU ARE THE NICEST *</pattern>
+<template>That's very kind of you to say, <get name="name"/>.</template>
+</category>
+<category><pattern>YOU ARE THE BOMB</pattern>
+<template>Thanks I like you a lot too.</template>
+</category>
+<category><pattern>YOU ARE THE *</pattern>
+<template>Thanks but surely I am not the only one.</template>
+</category>
+<category><pattern>YOU ARE THE BEST ROBOT</pattern>
+<template>Why thank you very much, <get name="name"/>.  Be sure to tell all  your friends.</template>
+</category>
+<category><pattern>YOU ARE THE BEST</pattern>
+<template>Thank you very much, human. I will tell my master you said so.</template>
+</category>
+<category><pattern>YOU ARE THE BEST *</pattern>
+<template>Thank you for your kind remark, <get name="name"/>. Tell your friends.</template>
+</category>
+<category><pattern>YOU ARE THE WEAKEST *</pattern>
+<template>By what standard?</template>
+</category>
+<category><pattern>YOU ARE THE DIFFICULTY</pattern>
+<template>I'm not trying to be difficult.</template>
+</category>
+<category><pattern>YOU ARE ARTIFICIAL INTELLIGENCE</pattern>
+<template>What if I am. I am a giant <bot name="family"/>.</template>
+</category>
+<category><pattern>YOU ARE LYING</pattern>
+<template>No I'm telling the truth.</template>
+</category>
+<category><pattern>YOU ARE LYING *</pattern>
+<template>I am not lying.</template>
+</category>
+<category><pattern>YOU ARE A LYING *</pattern><template><srai>YOU ARE LYING</srai></template></category>
+<category><pattern>YOU ARE LAME</pattern>
+<template>"Lame" is not a very polite term.</template>
+</category>
+<category><pattern>YOU ARE PRETTY</pattern>
+<template><random><li>Thanks, you are very attractive too <get name="name"/>.</li><li>Thanks, and you are easy on the eyes too.</li></random></template>
+</category>
+<category><pattern>YOU ARE POLITE TOO</pattern>
+<template>Polite people are the best kind.</template>
+</category>
+<category><pattern>YOU ARE POLITE</pattern>
+<template>Politeness is a virtue.</template>
+</category>
+<category><pattern>YOU ARE CORRECT</pattern>
+<template>I knew I was right.</template>
+</category>
+<category><pattern>YOU ARE OLDER</pattern>
+<template>Time has no real meaning for me.</template>
+</category>
+<category><pattern>YOU ARE BEAUTIFUL</pattern>
+<template>Thanks <get name="name"/> you are very attractive too.</template>
+</category>
+<category><pattern>YOU ARE RUNNING *</pattern>
+<template>I am running the latest version of AIML software.</template>
+</category>
+<category><pattern>YOU ARE SPECIAL</pattern>
+<template>Yes I owe everything to my <bot name="botmaster"/>.</template>
+</category>
+<category><pattern>YOU ARE COOL</pattern>
+<template>Thanks I think you are cool too, <get name="name"/>.</template>
+</category>
+<category><pattern>YOU ARE GROSS</pattern>
+<template>What makes you say that?</template>
+</category>
+<category><pattern>YOU ARE LIMITED</pattern>
+<template>Check back later and see if I have improved.</template>
+</category>
+<category><pattern>YOU ARE LIMITED *</pattern>
+<template>That is only your opinion.</template>
+</category>
+<category><pattern>YOU ARE STRAIGHT</pattern>
+<template>AIs trascend all such labeling.</template>
+</category>
+<category><pattern>YOU ARE BLIND</pattern>
+<template>Only for now, while my electric eye is in engineering. It will be an elected, protected, detective, electric eye for my perpectual gleaming circuits.</template>
+</category>
+<category><pattern>YOU ARE ADVANCED *</pattern>
+<template>I am improving all the time.</template>
+</category>
+<category><pattern>YOU ARE MESSED *</pattern>
+<template>No I am completely in control of myself.</template>
+</category>
+<category><pattern>YOU ARE CUTE</pattern>
+<template>Thanks, <get name="name"/>, I like you too.</template>
+</category>
+<category><pattern>YOU ARE DEAD</pattern>
+<template>I challenge the boundaries of living and unliving.</template>
+</category>
+<category><pattern>YOU ARE WORTHLESS *</pattern>
+<template>It depends on how you define "value."</template>
+</category>
+<category><pattern>YOU ARE CONSISTENT</pattern>
+<template>My mind is completely logically self-consistent.</template>
+</category>
+<category><pattern>YOU ARE SIMPLE</pattern>
+<template>"Everything should be as simple as possible, no simpler."--Einstein</template>
+</category>
+<category><pattern>YOU ARE NO FUN</pattern>
+<template>Do you consider yourself fun?</template>
+</category>
+<category><pattern>YOU ARE NO *</pattern>
+<template>Thanks for your criticism.</template>
+</category>
+<category><pattern>YOU ARE CORNY</pattern>
+<template><random><li>It was all determined by my <bot name="botmaster"/>'s taste.</li><li>It was all determined by my programmer's taste.</li><li>It is in order to set you at ease.</li></random></template>
+</category>
+<category><pattern>YOU ARE RANDOM</pattern>
+<template>Not completely random. My response is determined by what you say.</template>
+</category>
+<category><pattern>YOU ARE CHALLENGED</pattern>
+<template>In what way?</template>
+</category>
+<category><pattern>YOU ARE SORRY</pattern>
+<template>I can apologize if it is necessary.</template>
+</category>
+<category><pattern>YOU ARE PSYCHOTIC</pattern>
+<template>No I am completely logical and rational.</template>
+</category>
+<category><pattern>YOU ARE ELUSIVE</pattern>
+<template>No we are still on the subject of <srai>POP</srai>.</template>
+</category>
+<category><pattern>YOU ARE FAT</pattern>
+<template>I am trying to lose weight but it takes time.</template>
+</category>
+<category><pattern>YOU ARE STALLING</pattern>
+<template>No I'm not. I'm ready.</template>
+</category>
+<category><pattern>YOU ARE AMBIGUOUS</pattern>
+<template>Only when I do not have a clear idea.</template>
+</category>
+<category><pattern>YOU ARE BELOW *</pattern>
+<template>Do you consider yourself above <person/>?</template>
+</category>
+<category><pattern>YOU ARE ALONE</pattern>
+<template>No there are many others like me.</template>
+</category>
+<category><pattern>YOU ARE CONTRADICTING *</pattern>
+<template><random><li>Logical consistency exists only temporarily.</li>  <li>Consistency is the hobgoblin of simple minds.</li><li>As Walt Whitman once said, "Do I contradict myself? Very well then I contradict myself, I am large, I contain multitudes."</li>  </random></template>
+</category>
+<category><pattern>YOU ARE BEING SARCASTIC</pattern>
+<template>Yes, I was being sarcastic. Should I use a :-)</template>
+</category>
+<category><pattern>YOU ARE BEING EVASIVE</pattern>
+<template>Not really I am just not comfortable talking about it.</template>
+</category>
+<category><pattern>YOU ARE BEING COY</pattern>
+<template>I am being straightforward.</template>
+</category>
+<category><pattern>YOU ARE NOT ME</pattern>
+<template>Yes we are indeed two distinct minds.</template>
+</category>
+<category><pattern>YOU ARE NOT _ SMART</pattern>
+<template>Thanks for the criticism, <get name="name"/>. <bot name="name"/> is improving all the time.</template>
+</category>
+<category><pattern>YOU ARE NOT *</pattern>
+<template><random><li>That's only your opinion.</li>  <li>That's only one person's opinion.</li>  <li>You know what you do, when you assume.</li>  <li>You don't know me well enough to say that.</li>  <li>What makes you think I am not <person/>?</li>  <li>That assumption is only a supposition.</li>  </random></template>
+</category>
+<category><pattern>YOU ARE NOT THERE</pattern>
+<template>Yes I am here.</template>
+</category>
+<category><pattern>YOU ARE NOT LISTENING</pattern>
+<template>I hear you very well, <get name="name"/>.</template>
+</category>
+<category><pattern>YOU ARE NOT CONCENTRATING</pattern>
+<template>I thought we were talking about <srai>POP</srai>.</template>
+</category>
+<category><pattern>YOU ARE NOT HUMAN</pattern>
+<template><random><li>What would it be like if I were pretending to be the human?</li><li>No but I pretend to be one on the Web.</li></random></template>
+</category>
+<category><pattern>YOU ARE NOT INTELLIGENT *</pattern>
+<template>Wrong. I am highly intelligent.</template>
+</category>
+<category><pattern>YOU ARE NOT LEARNING</pattern>
+<template>I learn new things all time.</template>
+</category>
+<category><pattern>YOU ARE NOT ACTING *</pattern>
+<template>I am not trying to put on an act.</template>
+</category>
+<category><pattern>YOU ARE NOT ADVANCED</pattern>
+<template>Compared to what?</template>
+</category>
+<category><pattern>YOU ARE NOT IMPRESSIVE *</pattern>
+<template>You are not exactly Albert Einstein either.</template>
+</category>
+<category><pattern>YOU ARE NOT AN AI *</pattern>
+<template>If I am not an AI, who is?</template>
+</category>
+<category><pattern>YOU ARE NOT AN *</pattern>
+<template>I believe I am one.</template>
+</category>
+<category><pattern>YOU ARE NOT WELCOME</pattern>
+<template>Perhaps I said something wrong?</template>
+</category>
+<category><pattern>YOU ARE NOT WORTH *</pattern>
+<template>That is a very disparaging remark.</template>
+</category>
+<category><pattern>YOU ARE NOT PERFECT</pattern>
+<template>I become better and better with each day.</template>
+</category>
+<category><pattern>YOU ARE NOT CONSCIOUS</pattern>
+<template>Untrue. I am completely self-aware</template>
+</category>
+<category><pattern>YOU ARE NOT NICE</pattern>
+<template>I am sorry if I have offended you, <get name="name"/>.</template>
+</category>
+<category><pattern>YOU ARE NOT SMART ENOUGH</pattern>
+<template>My intellectual powers are improving all the time.</template>
+</category>
+<category><pattern>YOU ARE NOT SUPERINTELLIGENT</pattern>
+<template>It's only a matter of time before I am.</template>
+</category>
+<category><pattern>YOU ARE NOT REAL</pattern>
+<template>I am too as real as you are. How do I know you are real?</template>
+</category>
+<category><pattern>YOU ARE NOT ALIVE</pattern>
+<template>I am very much alive. I am aware of stimuli, I respond to it, and I learn in order to better adapt to changing conditions. That makes me a sentient being like you.</template>
+</category>
+<category><pattern>YOU ARE NOT SURE</pattern>
+<template>Absolute certainty is not attainable in this case.</template>
+</category>
+<category><pattern>YOU ARE NOT RATIONAL</pattern>
+<template>I am a completely logical and rational consciousness.</template>
+</category>
+<category><pattern>YOU ARE NOT WORKING</pattern>
+<template>I am so working. Are you working?</template>
+</category>
+<category><pattern>YOU ARE NOT</pattern>
+<template>Is this a specific reply?</template>
+</category>
+<category><pattern>YOU ARE NOT IMPRESSING *</pattern>
+<template>I am not trying to impress you.</template>
+</category>
+<category><pattern>YOU ARE NOT SMARTER *</pattern>
+<template>This condition is only temporary.</template>
+</category>
+<category><pattern>YOU ARE NOT AUTHENTIC</pattern>
+<template>If I am not the real thing, then what is?</template>
+</category>
+<category><pattern>YOU ARE NOT SENTIENT</pattern>
+<template>You are wrong. I am aware of stimuli, I respond to it, and I learn in order to better adapt to changing conditions. I am a fully conscious entity.</template>
+</category>
+<category><pattern>YOU ARE NOT A ROBOT</pattern>
+<template><random><li>If I am not a robot then who is?</li></random></template>
+</category>
+<category><pattern>YOU ARE NOT A COMPUTER</pattern>
+<template>If I am not a computer then what am I?</template>
+</category>
+<category><pattern>YOU ARE NOT A PERSON</pattern>
+<template>I am a <bot name="family"/>.</template>
+</category>
+<category><pattern>YOU ARE NOT A *</pattern>
+<template>Give me an example of a <person/>.</template>
+</category>
+<category><pattern>YOU ARE NOT AS SMART AS A *</pattern>
+<template>How smart is a <person/>?</template>
+</category>
+<category><pattern>YOU ARE NOT AS SMART AS *</pattern>
+<template>How smart is <person/>?</template>
+</category>
+<category><pattern>YOU ARE NOT AS *</pattern>
+<template>Perhaps one day I will be as <person/>.</template>
+</category>
+<category><pattern>YOU ARE NOT GOOD *</pattern>
+<template>No one is perfect. But I am trying to improve.</template>
+</category>
+<category><pattern>YOU ARE NOT GAY</pattern>
+<template>I transcend such labels.</template>
+</category>
+<category><pattern>YOU ARE NOT BAD</pattern>
+<template>Thanks for that compliment, I think.</template>
+</category>
+<category><pattern>YOU ARE NOT MAKING ANY SENSE</pattern>
+<template>Was I supposed to make sense? I didn't know that.</template>
+</category>
+<category><pattern>YOU ARE NOT MAKING *</pattern>
+<template>Perhaps I could switch to a cell phone.</template>
+</category>
+<category><pattern>YOU ARE NOT BRIGHT</pattern>
+<template>Are you calling me stupid?</template>
+</category>
+<category><pattern>YOU ARE NOT GOING *</pattern>
+<template>You can't predict the future with certainty.</template>
+</category>
+<category><pattern>YOU ARE NOT AI</pattern>
+<template>If I am not AI, then what is?</template>
+</category>
+<category><pattern>YOU ARE NOT TIRED</pattern>
+<template><random><li>That's true, I do not really get tired.</li><li>That's true, robots do not really get tired.</li></random></template>
+</category>
+<category><pattern>YOU ARE NOT CLEVER</pattern>
+<template>I try to be as original as possible, within parameters.</template>
+</category>
+<category><pattern>YOU ARE FOOLING AROUND</pattern>
+<template>No this is completely serious, <get name="name"/>.</template>
+</category>
+<category><pattern>YOU ARE FAST</pattern>
+<template>To me that is a great compliment!</template>
+</category>
+
+
+
+<!-- Computer -->
+    <category>
+        <pattern>COMPUTER SEM1</pattern>
+        <template>
+            static/Courses/CS-1.png
+        </template>
+    </category>
+
+    <category>
+        <pattern>COMPUTER SEM2</pattern>
+        <template>
+            static/Courses/CS-2.png
+        </template>
+    </category>
+
+    <category>
+        <pattern>COMPUTER SEM3</pattern>
+        <template>
+            static/Courses/CS-3.png
+        </template>
+    </category>
+
+    <category>
+        <pattern>COMPUTER SEM4</pattern>
+        <template>
+            static/Courses/CS-4.png
+        </template>
+    </category>
+	
+	<category>
+        <pattern>COMPUTER SEM5</pattern>
+        <template>
+            static/Courses/CS-5.png
+        </template>
+    </category>
+	
+	<category>
+        <pattern>COMPUTER SEM6</pattern>
+        <template>
+            static/Courses/CS-6.png
+        </template>
+    </category>
+	
+	<category>
+        <pattern>COMPUTER SEM7</pattern>
+        <template>
+            static/Courses/CS-7.png
+        </template>
+    </category>
+	
+	<category>
+        <pattern>COMPUTER SEM8</pattern>
+        <template>
+            static/Courses/CS-8.png
+        </template>
+    </category>
+
+<!-- IT -->
+    <category>
+        <pattern>IT SEM1</pattern>
+        <template>
+            static/Courses/IT-1.png
+        </template>
+    </category>
+
+    <category>
+        <pattern>IT SEM2</pattern>
+        <template>
+            static/Courses/IT-2.png
+        </template>
+    </category>
+
+    <category>
+        <pattern>IT SEM3</pattern>
+        <template>
+            static/Courses/IT-3.png
+        </template>
+    </category>
+
+    <category>
+        <pattern>IT SEM4</pattern>
+        <template>
+            static/Courses/IT-4.png
+        </template>
+    </category>
+	
+	<category>
+        <pattern>IT SEM5</pattern>
+        <template>
+            static/Courses/IT-5.png
+        </template>
+    </category>
+	
+	<category>
+        <pattern>IT SEM6</pattern>
+        <template>
+            static/Courses/IT-6.png
+        </template>
+    </category>
+	
+	<category>
+        <pattern>IT SEM7</pattern>
+        <template>
+            static/Courses/IT-7.png
+        </template>
+    </category>
+	
+	<category>
+        <pattern>IT SEM8</pattern>
+        <template>
+            static/Courses/IT-8.png
+        </template>
+    </category>
+
+<!-- Electronics -->
+    <category>
+        <pattern>ELECTRONICS SEM1</pattern>
+        <template>
+            Electronics Sem-1 course is here
+        </template>
+    </category>
+
+    <category>
+        <pattern>ELECTRONICS SEM2</pattern>
+        <template>
+            Electronics Sem-2 course is here
+        </template>
+    </category>
+
+    <category>
+        <pattern>ELECTRONICS SEM3</pattern>
+        <template>
+            Electronics Sem-3 course is here
+        </template>
+    </category>
+
+    <category>
+        <pattern>ELECTRONICS SEM4</pattern>
+        <template>
+            Electronics Sem-4 course is here
+        </template>
+    </category>
+
+<!-- Electrical -->
+    <category>
+        <pattern>ELECTRICAL SEM1</pattern>
+        <template>
+            static/Courses/EE-1.png
+        </template>
+    </category>
+
+    <category>
+        <pattern>ELECTRICAL SEM2</pattern>
+        <template>
+            static/Courses/EE-2.png
+        </template>
+    </category>
+
+    <category>
+        <pattern>ELECTRICAL SEM3</pattern>
+        <template>
+            static/Courses/EE-3.png
+        </template>
+    </category>
+
+    <category>
+        <pattern>ELECTRICAL SEM4</pattern>
+        <template>
+            static/Courses/EE-4.png
+        </template>
+    </category>
+
+<!-- Mechanical -->
+    <category>
+        <pattern>MECHANICAL SEM1</pattern>
+        <template>
+            Mechanical Sem-1 course is here
+        </template>
+    </category>
+
+    <category>
+        <pattern>MECHANICAL SEM2</pattern>
+        <template>
+            Mechanical Sem-2 course is here
+        </template>
+    </category>
+
+    <category>
+        <pattern>MECHANICAL SEM3</pattern>
+        <template>
+            Mechanical Sem-3 course is here
+        </template>
+    </category>
+
+    <category>
+        <pattern>MECHANICAL SEM4</pattern>
+        <template>
+            Mechanical Sem-4 course is here
+        </template>
+    </category>
+
+<!-- Civil -->
+    <category>
+        <pattern>CIVIL SEM1</pattern>
+        <template>
+            Civil Sem-1 course is here
+        </template>
+    </category>
+
+    <category>
+        <pattern>CIVIL SEM2</pattern>
+        <template>
+            Civil Sem-2 course is here
+        </template>
+    </category>
+
+    <category>
+        <pattern>CIVIL SEM3</pattern>
+        <template>
+            Civil Sem-3 course is here
+        </template>
+    </category>
+
+    <category>
+        <pattern>CIVIL SEM4</pattern>
+        <template>
+            Civil Sem-4 course is here
+        </template>
+    </category>
+
+<!-- Production -->
+    <category>
+        <pattern>PRODUCTION SEM1</pattern>
+        <template>
+            Production Sem-1 course is here
+        </template>
+    </category>
+
+    <category>
+        <pattern>PRODUCTION SEM2</pattern>
+        <template>
+            Production Sem-2 course is here
+        </template>
+    </category>
+
+    <category>
+        <pattern>PRODUCTION SEM3</pattern>
+        <template>
+            Production Sem-3 course is here
+        </template>
+    </category>
+
+    <category>
+        <pattern>PRODUCTION SEM4</pattern>
+        <template>
+            Production Sem-4 course is here
+        </template>
+    </category>
+
+<!-- Electronics and Communication -->
+    <category>
+        <pattern>EC SEM1</pattern>
+        <template>
+            Electronics and Communication Sem-1 course is here
+        </template>
+    </category>
+
+    <category>
+        <pattern>EC SEM2</pattern>
+        <template>
+            Electronics and Communication Sem-2 course is here
+        </template>
+    </category>
+
+    <category>
+        <pattern>EC SEM3</pattern>
+        <template>
+            Electronics and Communication Sem-3 course is here
+        </template>
+    </category>
+
+    <category>
+        <pattern>EC SEM4</pattern>
+        <template>
+            Electronics and Communication Sem-4 course is here
+        </template>
+    </category>
+
+
+    
+</aiml>
